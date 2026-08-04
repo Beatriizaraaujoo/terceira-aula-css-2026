@@ -35,19 +35,19 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(143, 208, 213, 0.263);
+        background: rgba(255, 0, 187, 0.111);
         z-index: -1;
     }
     /* == CABEÇALHO ==*/
     header{
         text-align: center;
-        color: #357eaf;
+        color: #af3582;
         margin-bottom: 40px;
     }
-    header h1{
-       font-size: 1.1rem;
+    header h5{
+       font-size:larger
        margin-bottom: 10px;
-       text-shadow: 0 2px 8px rgba(17, 128, 213, 0.997);
+       text-shadow: 0 2px 8px rgba(165, 68, 116, 0.997);
     }
     header p{
         font-size: 1.1rem;
@@ -66,7 +66,7 @@
         height: 380px;
         border-radius: 16px;
         overflow: hidden;
-        box-shadow: 0 10px 30px rgb(209, 236, 247);
+        box-shadow: 0 10px 30px rgb(118, 175, 175);
         cursor: pointer;
     }
     .card img{
@@ -88,8 +88,8 @@
         bottom: 0;
         width: 100%;
         padding: 20%;
-        color: #fff;
-        background: linear-gradient(to top,rgba(42, 152, 186, 0.438),transparent);
+        color: #000000c3;
+        background: linear-gradient(to top,rgba(186, 42, 112, 0.278),transparent);
         /*começa deslocando para baixo invísivel*/
         transform: translateY(60%);
         opacity: 0;
@@ -99,9 +99,128 @@
     .card:hover .card-conteudo{
         transform: translateY(0);
         opacity:1;
+        color: #e917dfb5;
     }
     .card-conteudo h3{
         font: size 1.3rem;
         margin-bottom: 8px;
+        color: #9e088dc3;
     }
-    
+    .card-conteudo p{
+        font-size: 0.9rem;
+        margin-bottom: 14px;
+        opacity: 0.9;
+        color: #490303;
+    } 
+
+   
+     .card-conteudo-1{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 20%;
+        color: #e9c70a;
+        background: linear-gradient(to top,rgba(172, 183, 10, 0.278),transparent);
+        /*começa deslocando para baixo invísivel*/
+        transform: translateY(60%);
+        opacity: 0;
+        transition: transform 0.4s ease, opacity 0,4s;
+    }
+    /*ao passar o mouse no card, o conteúdo sobe e aparece*/
+    .card:hover .card-conteudo-1{
+        transform: translateY(0);
+        opacity:1;
+        color: #f40a0a;
+    }
+    .card-conteudo-1 h3{
+        font: size 1.3rem;
+        margin-bottom: 8px;
+        color: #ffea04;
+    }
+    .card-conteudo-1 p{
+        font-size: 0.9rem;
+        margin-bottom: 14px;
+        opacity: 0.9;
+        color: #f0de81;
+    } 
+    .card-conteudo-2{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 20%;
+        color: #000000;
+        background: linear-gradient(to top,rgba(150, 42, 186, 0.278),transparent);
+        /*começa deslocando para baixo invísivel*/
+        transform: translateY(60%);
+        opacity: 0;
+        transition: transform 0.4s ease, opacity 0,4s;
+    }
+    /*ao passar o mouse no card, o conteúdo sobe e aparece*/
+    .card:hover .card-conteudo-2{
+        transform: translateY(0);
+        opacity:1;
+        color: #e9d117;
+    }
+    .card-conteudo-2 h3{
+        font: size 1.3rem;
+        margin-bottom: 8px;
+        color: #60056a;
+    }
+    .card-conteudo-2 p{
+        font-size: 0.9rem;
+        margin-bottom: 14px;
+        opacity: 0.9;
+        color: #b067b1e5;
+    } 
+
+    .card-conteudo-3{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 20%;
+        color: #8e08f5;
+        background: linear-gradient(to top,rgba(42, 152, 186, 0.278),transparent);
+        /*começa deslocando para baixo invísivel*/
+        transform: translateY(60%);
+        opacity: 0;
+        transition: transform 0.4s ease, opacity 0,4s;
+    }
+    /*ao passar o mouse no card, o conteúdo sobe e aparece*/
+    .card:hover .card-conteudo-3{
+        transform: translateY(0);
+        opacity:1;
+        color: #17e99c;
+    }
+    .card-conteudo-3 h3{
+        font: size 1.3rem;
+        margin-bottom: 8px;
+        color: #07167b;
+    }
+    .card-conteudo-3 p{
+        font-size: 0.9rem;
+        margin-bottom: 14px;
+        opacity: 0.9;
+        color: #000000;
+    } 
+    .btn{
+        display:inline-block;
+        padding: 8px 18px;
+        background: #ffffff;
+        text-decoration: none;
+        border-radius: 30px;
+        font-size: 0.85rem;
+        font-weight: bold;
+        transition: backgroud 0.3s ease;
+    }
+    .btn:houver{
+        background: #ffffff;
+    }
+    /*===RESPONSIVEL===*/
+    @media(max-width:600px){
+    .card{
+        width: 90%;
+        height: 320px;}
+    }
